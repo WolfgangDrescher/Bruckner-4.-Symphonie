@@ -1,0 +1,52 @@
+\documentclass[a4paper]{scrartcl} % scrreprt
+
+% XeLaTeX
+% polyglossia
+% fontspec
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[nswissgerman]{babel}
+% \usepackage[babel,german=swiss]{csquotes}
+\usepackage[doublespacing]{setspace}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage[style=authortitle-ibid]{biblatex} % verbose-ibid
+\usepackage[bottom,norule,hang,perpage]{footmisc}
+\usepackage{geometry}
+\usepackage{chngcntr}
+\usepackage{textcomp}
+% \usepackage{microtype}
+
+\geometry{a4paper,top=30mm,right=27mm,bottom=30mm,left=27mm}
+\setcounter{secnumdepth}{3}
+\makeindex
+\addbibresource{bibliography.bib}
+\setlength{\footnotemargin}{2mm}
+\renewcommand*{\labelnamepunct}{\addcolon\addspace} % Interpunktion in Zitaten zwischen Autor und Titel
+% \renewcommand{\newunitpunct}{\addcomma\addspace} % Zitatelemente mit einem Komma trennen (nicht der standardmässig Punkt)
+\renewcommand{\subtitlepunct}{\addperiod\addspace}
+% \renewcommand{\footnoterule}{\rule{45mm}{0.1mm}{\vspace*{5mm}}} % Trennlinie über Footer
+\counterwithin{figure}{section}
+
+\title{Anton Bruckners 4. Symphonie in Es-Dur «Romantische», WAB 104}
+\subtitle{Ein Vergleich des langsamen Satzes zwischen der «Fassung 1874» und «Fassung 1878/80»}
+\subject{Mastervortrag}
+\author{
+	Wolfgang Drescher\thanks{Klasse: Prof. Dr. Felix Diergarten}\\
+	Hochschule für Musik Freiburg
+}
+\date{4. Juli 2018}
+
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\include{content}
+
+\printbibliography
+
+\end{document}
