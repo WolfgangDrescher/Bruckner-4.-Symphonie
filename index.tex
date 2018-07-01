@@ -18,6 +18,7 @@
 \usepackage{textcomp}
 % \usepackage{microtype}
 \usepackage{wasysym}
+\usepackage{tikz}
 
 \geometry{a4paper,top=30mm,right=27mm,bottom=30mm,left=27mm}
 \setcounter{secnumdepth}{3}
@@ -30,6 +31,7 @@
 % \renewcommand{\footnoterule}{\rule{45mm}{0.1mm}{\vspace*{5mm}}} % Trennlinie über Footer
 \counterwithin{figure}{section}
 \newcommand*{\studienziffer}[1]{\framebox{#1}} % Make a box arround text
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{\node[shape=circle,draw,inner sep=1pt] (char) {#1};}}
 
 \title{Anton Bruckners 4. Symphonie in Es-Dur «Romantische», WAB 104}
 \subtitle{Ein Vergleich des langsamen Satzes zwischen der «Fassung 1874» und «Fassung 1878/80»}
