@@ -34,6 +34,15 @@
 \newcommand*{\studienziffer}[1]{\framebox{#1}} % Make a box arround text
 \newcommand*\circled[1]{\tikz[baseline=(char.base)]{\node[shape=circle,draw,inner sep=1pt] (char) {#1};}}
 
+% Detect current Git commit hash
+\usepackage{xstring}
+\usepackage{catchfile}
+\CatchFileDef{\gitHash}{.git/refs/heads/master}{}
+\newcommand{\gitAbbrevHash}{%
+	\StrLeft{\gitHash}{7}%
+}
+
+
 \title{Anton Bruckners 4. Symphonie in Es-Dur «Romantische», WAB 104}
 \subtitle{Ein Vergleich des langsamen Satzes zwischen der «Fassung 1874» und «Fassung 1878/80»}
 \subject{Mastervortrag}
